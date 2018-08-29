@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.grant.followthelead.AddEventActivity">
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="New Event"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:id="@+id/eventName"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginBottom="15dp"
+        android:hint="Event Name*"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:id="@+id/eventSponsor"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginBottom="15dp"
+        android:hint="Event Sponsor*"
+        android:inputType="textPostalAddress"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:id="@+id/eventLocation"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginBottom="15dp"
+        android:hint="Event Location*"
+        android:inputType="textPostalAddress"/>
+
+    <EditText
+        android:id="@+id/eventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Event(MM/DD/YYYY)"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="date"
+        android:singleLine="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:layout_marginTop="45dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="Create"
+        android:textColor="#fff"
+        android:onClick="createEvent"/>
+
+</LinearLayout>
